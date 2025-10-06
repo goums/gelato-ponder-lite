@@ -16,7 +16,7 @@ export async function onExecSucess({
 	| "Automate:ExecBypassModuleSuccess"
 	| "Automate:ExecSuccess"
 >) {
-	console.log(`ExecSuccess: ${event.args.taskId}`);
+	//console.log(`ExecSuccess: ${event.args.taskId}`);
 	const db = context.db;
 	const chainId = context.chain.id;
 
