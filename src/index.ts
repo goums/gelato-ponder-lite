@@ -44,7 +44,7 @@ export async function onTaskCreated({
 }: IndexingFunctionArgs<"Automate:TaskCreated">) {
 	const db = context.db;
 	const chainId = context.chain.id;
-	console.log(`TaskCreated: ${chainId} ${event.args.taskId}`);
+	//console.log(`TaskCreated: ${chainId} ${event.args.taskId}`);
 
 	await db
 		.insert(creators)
@@ -82,7 +82,7 @@ export async function onTaskCancelled({
 	const db = context.db;
 	const chainId = context.chain.id;
 
-	console.log(`TaskCancelled: ${chainId} ${event.args.taskId}`);
+	//console.log(`TaskCancelled: ${chainId} ${event.args.taskId}`);
 
 	await db
 		.update(creators, {
