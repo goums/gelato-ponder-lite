@@ -17,6 +17,14 @@ export default createConfig({
 			id: 80094,
 			rpc: process.env.PONDER_RPC_URL_80094,
 		},
+		sepolia: {
+			id: 11155111,
+			rpc: process.env.PONDER_RPC_URL_11155111,
+		},
+		baseSepolia: {
+			id: 84532,
+			rpc: process.env.PONDER_RPC_URL_84532,
+		},
 	},
 	contracts: {
 		Automate: {
@@ -33,6 +41,14 @@ export default createConfig({
 				berachain: {
 					address: "0xafd37d0558255aA687167560cd3AaeEa75c2841E",
 					startBlock: 702100,
+				},
+				sepolia: {
+					address: "0x2A6C106ae13B558BB9E2Ec64Bd2f1f7BEFF3A5E0",
+					startBlock: 4612086,
+				},
+				baseSepolia: {
+					address: "0x2A6C106ae13B558BB9E2Ec64Bd2f1f7BEFF3A5E0",
+					startBlock: 4638568,
 				},
 			},
 		},
