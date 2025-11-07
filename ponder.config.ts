@@ -25,6 +25,10 @@ export default createConfig({
 			id: 84532,
 			rpc: process.env.PONDER_RPC_URL_84532,
 		},
+		arbSepolia: {
+			id: 421614,
+			rpc: process.env.PONDER_RPC_URL_421614,
+		},
 	},
 	contracts: {
 		Automate: {
@@ -49,6 +53,10 @@ export default createConfig({
 				baseSepolia: {
 					address: "0x2A6C106ae13B558BB9E2Ec64Bd2f1f7BEFF3A5E0",
 					startBlock: 4638568,
+				},
+				arbSepolia: {
+					address: "0x2A6C106ae13B558BB9E2Ec64Bd2f1f7BEFF3A5E0",
+					startBlock: 1096654,
 				},
 			},
 		},
