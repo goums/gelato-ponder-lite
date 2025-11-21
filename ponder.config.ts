@@ -3,7 +3,7 @@ import { createConfig } from "ponder";
 import { AutomateAbi } from "./abis/AutomateAbi";
 
 export default createConfig({
-	ordering: "multichain",
+	ordering: "experimental_isolated",
 	chains: {
 		arbitrum: {
 			id: 42161,

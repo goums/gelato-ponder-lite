@@ -29,10 +29,15 @@ export const executions = onchainTable(
 	(table) => ({ pk: primaryKey({ columns: [table.chainId, table.id] }) }),
 );
 
-export const creators = onchainTable("creators", (t) => ({
-	id: t.hex().primaryKey(),
-	nbTasks: t.integer().notNull(),
-}));
+export const creators = onchainTable(
+	"creators",
+	(t) => ({
+		id: t.hex(),
+		chainId: t.integer(),
+		nbTasks: t.integer().notNull(),
+	}),
+	(table) => ({ pk: primaryKey({ columns: [table.chainId, table.id] }) }),
+);
 
 export const taskRelations = relations(tasks, ({ many, one }) => ({
 	executions: many(executions),

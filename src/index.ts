@@ -49,6 +49,7 @@ export async function onTaskCreated({
 	await db
 		.insert(creators)
 		.values({
+			chainId,
 			id: event.args.taskCreator,
 			nbTasks: 1,
 		})
@@ -86,6 +87,7 @@ export async function onTaskCancelled({
 
 	await db
 		.update(creators, {
+			chainId,
 			id: event.args.taskCreator,
 		})
 		.set((creator) => ({
