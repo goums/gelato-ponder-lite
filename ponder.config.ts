@@ -21,10 +21,10 @@ export default createConfig({
 			id: 11155111,
 			rpc: process.env.PONDER_RPC_URL_11155111,
 		},
-		baseSepolia: {
+		/*baseSepolia: {
 			id: 84532,
 			rpc: process.env.PONDER_RPC_URL_84532,
-		},
+		},*/
 		arbSepolia: {
 			id: 421614,
 			rpc: process.env.PONDER_RPC_URL_421614,
@@ -50,10 +50,10 @@ export default createConfig({
 					address: "0x2A6C106ae13B558BB9E2Ec64Bd2f1f7BEFF3A5E0",
 					startBlock: 4612086,
 				},
-				baseSepolia: {
+				/*baseSepolia: {
 					address: "0x2A6C106ae13B558BB9E2Ec64Bd2f1f7BEFF3A5E0",
 					startBlock: 4638568,
-				},
+				},*/
 				arbSepolia: {
 					address: "0x2A6C106ae13B558BB9E2Ec64Bd2f1f7BEFF3A5E0",
 					startBlock: 1096654,
